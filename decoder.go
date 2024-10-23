@@ -627,7 +627,7 @@ func (d *decode) checkHeader() error {
 		return fmt.Errorf("rdb: invalid file format")
 	}
 
-	version, _ := strconv.ParseInt(string(header[5:]), 10, 64)
+	// version, _ := strconv.ParseInt(string(header[5:]), 10, 64)
 	// if version < 1 || version > 7 {
 	// 	return fmt.Errorf("rdb: invalid RDB version number %d", version)
 	// }
